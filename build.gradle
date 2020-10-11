@@ -35,7 +35,11 @@ dependencies {
 	runtime('org.springframework.boot:spring-boot-devtools')
 	compile 'org.webjars:bootstrap:3.3.7-1'
 	compileOnly('org.projectlombok:lombok')
+	annotationProcessor 'org.projectlombok:lombok:1.18.14'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+	testCompileOnly 'org.projectlombok:lombok:1.18.14'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.14'
 }
 
 //export test coverage
